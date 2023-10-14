@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ShowData = (pairagraph) => {
+const ShowData = ({pairagrap}) => {
     return (
-        <p>{pairagraph}</p>
+        <p className='display'>{pairagrap}</p>
     )
-};
+}
 
 export default ShowData;

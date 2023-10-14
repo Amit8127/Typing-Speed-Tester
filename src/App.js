@@ -4,10 +4,12 @@ import pairagraph from './Data/pairaData';
 import ShowData from './Components/ShowData';
 
 const App = () => {
+    console.log(pairagraph);
     return (
-        <div>
+        <div className='container'>
             <UserInput />
-            <ShowData pairagraph={pairagraph} />
+            
+            <ShowData pairagrap={pairagraph} />
         </div>
     );
 }
