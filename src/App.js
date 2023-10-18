@@ -1,15 +1,18 @@
 import React from 'react';
-import UserInput from './Components/UserInput';
 import pairagraph from './Data/pairaData';
 import ShowData from './Components/ShowData';
+import Header from './Components/Header'
+import Typing from './Components/Typing';
+import Footer from './Components/Footer';
 
 const App = () => {
     console.log(pairagraph);
     return (
         <div className='container'>
-            <UserInput />
-            
-            <ShowData pairagrap={pairagraph} />
+            <Header />
+            {/* <ShowData pairagrap={pairagraph} /> */}
+            <Typing />
+            <Footer />
         </div>
     );
 }
