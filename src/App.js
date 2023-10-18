@@ -1,6 +1,5 @@
 import React from 'react';
 import pairagraph from './Data/pairaData';
-import ShowData from './Components/ShowData';
 import Header from './Components/Header'
 import Typing from './Components/Typing';
 import Footer from './Components/Footer';
