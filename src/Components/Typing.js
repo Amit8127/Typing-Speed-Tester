@@ -1,10 +1,25 @@
 import React, { useState } from "react";
+let keyChar = 0;
 
 const Typing = () => {
   const [timing, setTiming] = useState(15);
+  const [words, setWords] = useState("");
+  const [key, setKey] = useState(0);
   let text =
     "hide order led memory lift though dull gulf plates deer customs orbit began upward nuts natural tell hearing oldest visitor catch stove cotton syllable yourself blood sold level family until reader however buy although future ran double mad seed effort useful section strength strength previous silver system country identity gently";
-  let keyChar = 0;
+  
+
+  function handleTypeing(e) {
+    let value = e.target.value;
+    console.log(value)
+    setWords(value);
+    console.log(text.charAt(key))
+    if(value[value.length -1] === text.charAt(key)) {
+      setKey(key+1);
+    } else {
+    }
+  }
+
   return (
     <div className="typing-sec">
       <div className="top-bar">
@@ -21,7 +36,7 @@ const Typing = () => {
         ))}
       </div>
       <div>
-        <input type="text" className="type-input" />
+        <input type="text" className="type-input" name="input" onChange={handleTypeing}/>
       </div>
       <div className="function">
         <div className="row-1">

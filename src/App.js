@@ -5,7 +5,6 @@ import Typing from './Components/Typing';
 import Footer from './Components/Footer';
 
 const App = () => {
-    console.log(pairagraph);
     return (
         <div className='container'>
             <Header />

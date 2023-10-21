@@ -77,3 +77,23 @@ button {
 a {
     margin: 0px 5px;
 }
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-2 button {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    margin: 0px 5px;
+}
+
+.row-3 button {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    margin: 0px 5px;
+}
