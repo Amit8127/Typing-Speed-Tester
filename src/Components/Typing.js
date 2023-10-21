@@ -11,7 +11,7 @@ const Typing = () => {
 
   function handleTypeing(e) {
     let value = e.target.value;
-    console.log(value)
+    console.log(words)
     setWords(value);
     console.log(text.charAt(key))
     if(value[value.length -1] === text.charAt(key)) {
